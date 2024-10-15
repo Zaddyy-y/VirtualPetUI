@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74BDDE"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_petName"
+        android:layout_width="102dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="165dp"
+        android:fontFamily="casual"
+        android:text="ANDY"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_feed"
+        android:layout_width="97dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="casual"
+        android:text="FEED"
+        android:textColor="#000000"
+        android:textColorLink="#673AB7"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pet"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bath" />
+
+    <Button
+        android:id="@+id/btn_information"
+        android:layout_width="71dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="82dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="cursive"
+        android:text="i"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_petName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_bath"
+        android:layout_width="97dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="casual"
+        android:text="BATH"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_play"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_pet"
+        android:layout_width="97dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="137dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="casual"
+        android:text="PET"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="97dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="137dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="casual"
+        android:text="PLAY"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="casual"
+        android:text="STORE"
+        android:textColor="#0B0808"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_virtualPetPlaceholder"
+        android:layout_width="410dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_store"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>
